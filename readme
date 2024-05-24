@@ -1,1 +1,17 @@
-Readme
+# DevSecOps Tutorial
+
+This project demonstrates the integration of security into the DevOps lifecycle using various tools and practices. The goal is to build, test, and deploy a secure web application.
+
+## Technologies Used
+
+- Node.js
+- React
+- Docker
+- Kubernetes
+- Jenkins
+- SonarQube
+- OWASP ZAP
+- Snyk
+- Prometheus & Grafana
+- ELK Stack
+
