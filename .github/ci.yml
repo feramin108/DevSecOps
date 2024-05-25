@@ -33,3 +33,9 @@ jobs:
         cd frontend
         npm install
         npm test
+    - name: SonarQube Scan
+      uses: SonarSource/sonarcloud-github-action@v1
+      with:
+        projectKey: your_project_key
+        organization: your_organization
+        token: ${{ secrets.SONAR_TOKEN }}
