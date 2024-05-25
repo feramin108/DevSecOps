@@ -31,3 +31,24 @@ To run the frontend application:
 ```bash
 cd frontend
 npm start
+
+## CI/CD Pipeline
+
+This project uses GitHub Actions for continuous integration.
+
+The pipeline is defined in `.github/workflows/ci.yml` and runs on every push and pull request to the `main` branch.
+
+## Dockerization
+
+To build and run the Docker images:
+
+```bash
+# Backend
+cd backend
+docker build -t backend:latest .
+docker run -p 3000:3000 backend:latest
+
+# Frontend
+cd frontend
+docker build -t frontend:latest .
+docker run -p 3000:3000 frontend:latest
